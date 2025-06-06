@@ -1,9 +1,10 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const pageTitle = "My blog Page";
 ---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -13,13 +14,13 @@ const pageTitle = "My blog Page";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <Navigation />
-		<h1>{pageTitle}</h1>
-        <ul>
-            <li><a href="/blogs/post-1/">Post 1</a></li>
-            <li><a href="/blogs/post-2/">Post 2</a></li>
-            <li><a href="/blogs/post-3/">Post 3</a></li>
-        </ul>
-        <Footer />
+    <Header />
+    <h1>{pageTitle}</h1>
+    <ul>
+        <li><a href="/blogs/post-1/">Post 1</a></li>
+        <li><a href="/blogs/post-2/">Post 2</a></li>
+        <li><a href="/blogs/post-3/">Post 3</a></li>
+    </ul>
+    <Footer />
 	</body>
 </html>
